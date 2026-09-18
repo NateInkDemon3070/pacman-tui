@@ -28,7 +28,18 @@ Un par de buscadores con fuzzy finder/fzf para instalar paquetes de **pacman** y
 
 Todo en español, con bordes cuadrados y temas compartidos entre los tres buscadores.
 
+### Elegir entre yay y paru
+
+`aurfetch` se adapta a lo que tengas instalado:
+
+- Solo tenés **yay** → usa yay. Solo tenés **paru** → usa paru.
+- Tenés **ambos** → cada vez que lo abras te pregunta cuál usar con un selector.
+
+Aunque no tengas el otro, cambiarlo es fácil: por ejemplo, si vengo usando `paru` y quiero pasar a `yay`, instalá `yay` y la próxima vez te va a ofrecer los dos; si querés fijar uno solo, desinstalá el que no vas a usar.
+
 ## Instalación
+
+Primero el paquete (da igual qué shell uses, esto instala todo):
 
 ```sh
 git clone https://github.com/NateInkDemon3070/pacman-tui
@@ -36,11 +47,29 @@ cd pacman-tui
 makepkg -si
 ```
 
-Con el paquete, **fish** carga las funciones solo (van a `/usr/share/fish/vendor_functions.d/`). Para **bash** o **zsh** añadí a tu config:
+Después activá los atajos según tu shell:
+
+### Fish
+
+No tenés que hacer nada: el paquete instala las funciones en `/usr/share/fish/vendor_functions.d/` y se cargan solas en cada terminal.
+
+### Bash
+
+Agregá esta línea a tu `~/.bashrc`:
 
 ```sh
-source /usr/share/pacman-tui/pacman.bash   # o pacman.zsh
+source /usr/share/pacman-tui/pacman.bash
 ```
+
+### Zsh
+
+Agregá esta línea a tu `~/.zshrc`:
+
+```sh
+source /usr/share/pacman-tui/pacman.zsh
+```
+
+En ambos casos abrí una terminal nueva (o recargá el archivo con `source ~/.bashrc` / `source ~/.zshrc`) y ya podés usar `pacman`, `paru`, `pacfetch` y `aurfetch`.
 
 ### Requisitos
 
