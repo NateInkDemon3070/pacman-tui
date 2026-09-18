@@ -1,6 +1,6 @@
 # pacman-tui
 
-Un par de buscadores con fuzzy finder para instalar paquetes de **pacman** y del **AUR**, sin salirte de la terminal. Algo al estilo de las herramientas que trae Omarchy, pero con un toque más propio.
+Un par de buscadores con fuzzy finder/fzf para instalar paquetes de **pacman** y del **AUR**, sin salirte de la terminal. Algo al estilo de las herramientas que trae Omarchy, pero con un toque más propio.
 
 **pacfetch** lista todos los paquetes de los repos oficiales:
 
@@ -8,7 +8,7 @@ Un par de buscadores con fuzzy finder para instalar paquetes de **pacman** y del
 
 **aurfetch** hace lo mismo con el AUR, pero si tenés instalados *yay* y *paru* te deja elegir cuál usar:
 
-![Buscador de paquetes AUR](assets/2026-09-18_15-53.png)
+![Buscador de apps para el desinstalador](assets/2026-09-18_15-53.png)
 
 ## Qué hace
 
