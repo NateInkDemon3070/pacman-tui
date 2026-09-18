@@ -1,0 +1,27 @@
+pkgbase = pacman-tui
+	pkgdesc = Buscadores fuzzy TUI para pacman y AUR con paru, integrados como subcomandos (update/uninstall) y funciones para fish, bash y zsh
+	pkgver = 1.0.0
+	pkgrel = 1
+	url = https://github.com/NateInkDemon3070/pacman-tui
+	arch = any
+	license = GPL-3.0-or-later
+	depends = fzf
+	depends = pacman
+	depends = curl
+	depends = less
+	optdepends = paru: for AUR package installation
+	optdepends = yay: for AUR package installation
+	source = pacman-installer.sh
+	source = aur-installer.sh
+	source = pacman.fish
+	source = paru.fish
+	source = pacman.bash
+	source = pacman.zsh
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+	sha256sums = SKIP
+
+pkgname = pacman-tui
