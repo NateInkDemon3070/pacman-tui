@@ -2,7 +2,7 @@
 pkgname=pacman-tui
 pkgver=1.0.0
 pkgrel=1
-pkgdesc="Buscadores fuzzy TUI para pacman y AUR con paru, integrados como subcomandos (update/uninstall) y funciones para fish, bash y zsh"
+pkgdesc="Buscadores fuzzy TUI para pacman y AUR con soporte para yay o paru, integrados como subcomandos (update/uninstall) y funciones para fish, bash y zsh"
 arch=('any')
 url="https://github.com/NateInkDemon3070/pacman-tui"
 license=('GPL-3.0-or-later')
