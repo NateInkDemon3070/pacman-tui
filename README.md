@@ -33,9 +33,17 @@ Todo en español, con bordes cuadrados y temas compartidos entre los tres buscad
 `aurfetch` se adapta a lo que tengas instalado:
 
 - Solo tenés **yay** → usa yay. Solo tenés **paru** → usa paru.
-- Tenés **ambos** → cada vez que lo abras te pregunta cuál usar con un selector.
+- Tenés **ambos** → la primera vez te pregunta cuál usar y recuerda tu elección.
 
-Aunque no tengas el otro, cambiarlo es fácil: por ejemplo, si vengo usando `paru` y quiero pasar a `yay`, instalá `yay` y la próxima vez te va a ofrecer los dos; si querés fijar uno solo, desinstalá el que no vas a usar.
+Y si querés cambiarlo o fijarlo vos:
+
+```sh
+aurfetch --set-helper yay    # fija yay como predeterminado
+aurfetch --set-helper paru   # fija paru como predeterminado
+aurfetch --reset-helper      # borra el predeterminado (vuelve a preguntar)
+```
+
+También podés forzarlo por ejecución con `PACMAN_TUI_AUR_HELPER=yay aurfetch`.
 
 ## Instalación
 
